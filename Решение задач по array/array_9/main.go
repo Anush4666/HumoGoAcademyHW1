@@ -1,0 +1,24 @@
+package main
+
+import "fmt"
+
+func main() {
+	var (
+		n int
+		x int
+	)
+
+	fmt.Scan(&n)
+	arr := make([]int, n)
+	for i := 0; i < n; i++ {
+		fmt.Scan(&arr[i])
+	}
+	fmt.Scan(&x)
+
+	for i := 0;  i < n; i++ {
+		if arr[i] == x {
+			fmt.Println(i + 1)
+			break
+		}
+	}
+}
